@@ -1,8 +1,25 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
+import { ListaContactosComponent } from './components/lista-contactos/lista-contactos.component';
+import { AgregarContactoComponent } from './components/agregar-contacto/agregar-contacto.component';
+import { EditarContactoComponent } from './components/editar-contacto/editar-contacto.component';
+import { AppRoutingModule } from './app.routes';
 
-import { routes } from './app.routes';
-
-export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
-};
+@NgModule({
+  declarations: [
+    AppComponent,
+    ListaContactosComponent,
+    AgregarContactoComponent,
+    EditarContactoComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

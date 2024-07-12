@@ -1,0 +1,13 @@
+<div>
+    <h2>Lista de Contactos</h2>
+    <ul>
+      <li *ngFor="let contacto of contactos">
+        {{ contacto.nombre }} - {{ contacto.email }} - {{ contacto.telefono }}
+        <button (click)="eliminarContacto(contacto.id)">Eliminar</button>
+        <a [routerLink]="['/editar', contacto.id]">Editar</a>
+      </li>
+    </ul>
+    <a routerLink="/agregar" class="boton-agregar" >Agregar Contacto</a>
+
+  </div>
+  

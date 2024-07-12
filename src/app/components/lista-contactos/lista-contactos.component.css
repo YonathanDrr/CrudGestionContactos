@@ -1,0 +1,52 @@
+.lista-contactos {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #444;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.lista-contactos h2 {
+  text-align: center;
+}
+
+.lista-contactos ul {
+  padding: 0;
+}
+
+.lista-contactos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.lista-contactos li:last-child {
+  border-bottom: none;
+}
+
+.lista-contactos button, .lista-contactos a {
+  margin-left: 10px;
+  color: #fff;
+}
+
+
+
+.boton-agregar {
+  background-color: #39FF14; 
+  color: #000; 
+  padding: 15px 30px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  box-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14; 
+  transition: all 0.3s ease; 
+}
+
+.boton-agregar:hover {
+  background-color: #25D300; 
+  box-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14; 
+}
